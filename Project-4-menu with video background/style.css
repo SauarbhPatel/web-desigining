@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.glass {
+  width: 90%;
+  height: 85%;
+  z-index: 1;
+  border-radius: 25px;
+  border: 2px solid rgba(228, 202, 3, 0.2);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+.title {
+  color: rgb(228, 202, 3);
+  font-size: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.title span {
+  display: inline;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  background: linear-gradient();
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: transparent;
+  cursor: pointer;
+  animation: show 2s linear forwards;
+  animation-delay: 2.5s;
+}
+@keyframes show {
+  30%,100% {
+    color: white;
+  }
+}
+.navigation ul li::before {
+  position: absolute;
+  content: attr(text);
+  top: 0;
+  padding: 5px 10px;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  font-size: 24px;
+  font-weight: 800;
+  overflow: hidden;
+  color: var(--c);
+  transition: 0.5s;
+}
+.navigation ul li:hover::before {
+  height: 100%;
+}
+.navigation ul li::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s;
+  border-top: 3px solid var(--c);
+  border-bottom: 0px solid var(--c);
+  animation: down 2s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes down{
+  50%{
+    top:30px
+  }
+}
+.navigation ul li:hover::after {
+  border-bottom: 3px solid var(--c);
+  height: 80%;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+}
+.intro h2 {
+  color: white;
+  font-size: 3rem;
+}
+.intro h2 span {
+  color: rgb(228, 202, 3);
+  font-size: 6rem;
+  animation: text 1s linear infinite;
+}
+@keyframes text {
+  50% {
+    color: transparent;
+  }
+}
+.intro p {
+  max-width: 600px;
+  text-align: center;
+  color: white;
+}
+.btn {
+  background: transparent;
+  color: rgb(228, 202, 3);
+  border: 2px solid rgb(228, 202, 3);
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(164, 145, 0);
+}
