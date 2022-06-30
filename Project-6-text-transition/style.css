@@ -16,7 +16,6 @@ nav {
   display: flex;
   width: 100%;
   align-items: center;
-  /* background-color: rgba(220, 20, 60, 0.15); */
   background: linear-gradient(to left ,black,crimson) ;
   padding: 10px 5%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.176);
@@ -96,7 +95,7 @@ h1:nth-child(2) {
 }
 h1:nth-child(3) {
   animation: text_reveal_3 0.5s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 3s; 
 }
 @keyframes text_reveal {
   100% {
