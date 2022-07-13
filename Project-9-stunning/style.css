@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+}
+.first-login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.text-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  font-size: 4rem;
+  text-align: center;
+}
+.text-container h3 {
+  font-family: cursive;
+  margin-bottom: 20px;
+  color: white;
+}
+.text-container h3 span {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(3, 170, 162);
+  cursor: pointer;
+}
+.text-container p {
+  font-size: 22px;
+  font-family: cursive;
+  color: rgba(255, 255, 255, 0.645);
+}
+.anim {
+  font-family: "Lacquer";
+  font-size: 1.4em;
+  display: table-cell;
+  animation: logo-animate 2s linear infinite;
+}
+@keyframes logo-animate {
+  0%,
+  100% {
+    color: white;
+    filter: blur(2px);
+    text-shadow: 0 0 10px rgb(5, 99, 94), 0 0 20px rgb(5, 99, 94),
+      0 0 40px rgb(5, 99, 94), 0 0 80px rgb(5, 99, 94), 0 0 120px rgb(5, 99, 94),
+      0 0 200px rgb(5, 99, 94), 0 0 300px rgb(5, 99, 94),
+      0 0 400px rgb(5, 99, 94);
+  }
+  5%,
+  95% {
+    color: black;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+.anim:nth-child(1) {
+  animation-delay: 0s;
+  font-size: 1.7em;
+}
+.anim:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.anim:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.anim:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.anim:nth-child(5) {
+  font-size: 1.7em;
+  animation-delay: 1s;
+}
+.anim:nth-child(6) {
+  animation-delay: 1.25s;
+}
+.anim:nth-child(7) {
+  animation-delay: 1.5s;
+}
+.anim:nth-child(8) {
+  font-size: 1.7em;
+  animation-delay: 1.75s;
+}
+
+.btn {
+  margin-top: 40px;
+  width: 380px;
+  height: 200px;
+  text-decoration: none;
+  color: transparent;
+  background: rgba(0, 0, 0, 0.793);
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 47px;
+  font-family: "Lacquer";
+  cursor: pointer;
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+.btn span {
+  margin-left: 15px;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgb(3, 170, 162);
+} */

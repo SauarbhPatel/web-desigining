@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="conatiner">
         <div class="title">.Menu</div>
         <i class="fa-solid fa-bars menu"></i>
         <nav class="navigation">
@@ -27,17 +27,19 @@
             </ul>
         </nav>
     </div>
+
+
+    <script>
+        let menu = document.querySelector('.menu')
+        let close = document.querySelector('.close')
+        let navigation = document.querySelector('.navigation')
+        menu.addEventListener('click',()=>{
+            navigation.classList.add('active')
+        })
+        close.addEventListener('click',()=>{
+            navigation.classList.remove('active')
+        })
+    </script>
 </body>
-<script>
-    let menu = document.querySelector('.menu');
-    let close = document.querySelector('.close');
-    let navigation = document.querySelector('.navigation');
-    menu.addEventListener('click', () => {
-        navigation.classList.add('active')
-    })
-    close.addEventListener('click', () => {
-        navigation.classList.remove('active')
-    })
-</script>
 
 </html>
