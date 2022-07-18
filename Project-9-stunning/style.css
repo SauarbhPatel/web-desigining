@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 
 .flex {
   display: flex;
   justify-content: center;
@@ -132,4 +131,4 @@
   margin-left: 15px;
   color: transparent;
   -webkit-text-stroke: 1.5px rgb(3, 170, 162);
-} */
+} 
