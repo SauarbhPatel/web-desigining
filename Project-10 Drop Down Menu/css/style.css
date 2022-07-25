@@ -1,4 +1,4 @@
-/* *{
+*{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -93,4 +93,4 @@ body::before{
     margin-top: -42px;
     margin-left: 157px;
     background:rgb(255, 166, 0) ;
-} */
+} 
