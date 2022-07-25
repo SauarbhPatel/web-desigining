@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  border: 2px solid white;
+  padding: 12pc;
+  background-color: white;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 120px;
+  height: 120px;
+  box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+ul li .fa-brands {
+  font-size: 6em;
+  -webkit-text-stroke: 2px var(--clr);
+  color: transparent;
+}
+ul li::before,
+ul li::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 4px solid transparent;
+  font-family: fontAwesome;
+  font-size: 6em;
+  color: var(--clr);
+  text-align: center;
+  line-height: 120px;
+  overflow: hidden;
+}
+ul li::before {
+  animation: down1 2s linear infinite;
+}
+@keyframes down1 {
+  10% {
+    height: 0%;
+    border-color: var(--clr);
+  }
+  50% {
+    height: 100%;
+  }
+  90% {
+    height: 100%;
+    border-color: var(--clr);
+  }
+  100% {
+    height: 100%;
+    border-color: transparent;
+  }
+}
+ul li::after {
+  color: white;
+  -webkit-text-stroke: 2px var(--clr);
+  animation: down2 2s linear infinite;
+}
+@keyframes down2 {
+  10% {
+    height: 0%;
+    border-color: var(--clr);
+  }
+  50% {
+    height: 0%;
+  }
+  90% {
+    height: 100%;
+    border-color: var(--clr);
+  }
+  100% {
+    height: 100%;
+    border-color: transparent;
+  }
+}
+ul li:nth-child(1)::before,
+ul li:nth-child(1)::after {
+  content: "\f099";
+}
+ul li:nth-child(2)::before,
+ul li:nth-child(2)::after {
+  content: "\f16d";
+}
+ul li:nth-child(3)::before,
+ul li:nth-child(3)::after {
+  content: "\f232";
+}
+ul li:nth-child(4)::before,
+ul li:nth-child(4)::after {
+  content: "\f167";
+}
+ul li:nth-child(5)::before,
+ul li:nth-child(5)::after {
+  content: "\f09b";
+} */
