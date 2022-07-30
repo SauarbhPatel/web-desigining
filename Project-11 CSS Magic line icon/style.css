@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
+
 body {
   display: flex;
   justify-content: center;
@@ -53,6 +53,27 @@ ul li::after {
   line-height: 120px;
   overflow: hidden;
 }
+ul li:nth-child(1)::before,
+ul li:nth-child(1)::after {
+  content: "\f099";
+}
+ul li:nth-child(2)::before,
+ul li:nth-child(2)::after {
+  content: "\f16d";
+}
+ul li:nth-child(3)::before,
+ul li:nth-child(3)::after {
+  content: "\f232";
+}
+ul li:nth-child(4)::before,
+ul li:nth-child(4)::after {
+  content: "\f167";
+}
+ul li:nth-child(5)::before,
+ul li:nth-child(5)::after {
+  content: "\f09b";
+}
+
 ul li::before {
   animation: down1 2s linear infinite;
 }
@@ -95,23 +116,3 @@ ul li::after {
     border-color: transparent;
   }
 }
-ul li:nth-child(1)::before,
-ul li:nth-child(1)::after {
-  content: "\f099";
-}
-ul li:nth-child(2)::before,
-ul li:nth-child(2)::after {
-  content: "\f16d";
-}
-ul li:nth-child(3)::before,
-ul li:nth-child(3)::after {
-  content: "\f232";
-}
-ul li:nth-child(4)::before,
-ul li:nth-child(4)::after {
-  content: "\f167";
-}
-ul li:nth-child(5)::before,
-ul li:nth-child(5)::after {
-  content: "\f09b";
-} */
