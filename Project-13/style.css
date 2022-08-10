@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.custom-shape-divider-top-1659852971 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  background:url(bg.jpg);
+  background-position: bottom;
+  background-size: 100%;
+  z-index: -1;
+}
+.custom-shape-divider-top-1659852971 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 320px;
+}
+.custom-shape-divider-top-1659852971 .shape-fill {
+  fill: black;
+}
+.contact {
+  width: 750px;
+  height: 600px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px cyan;
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.857);
+}
+.contact .heading {
+  color: white;
+  font-size: 45px;
+  font-family: Bowlby One SC, sans-serif;
+  letter-spacing: 4px;
+  transform: scale(1, 1.5);
+  text-shadow: 2px 1px 0px cyan, 4px 2px 0px cyan;
+  display: flex;
+  margin: 20px 0;
+}
+.contact .row {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.contact .field {
+  background: transparent;
+  width: 80%;
+  height: 60px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+.field label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  pointer-events: none;
+}
+input:focus,
+input:valid {
+  outline: 0;
+  border-bottom-color: cyan;
+
+}
+.field label span {
+  display: inline-block;
+  font-size: 18px;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.field input:focus ~ label span,
+.field input:valid ~ label span {
+  color: cyan;
+  transform: translateY(-27px);
+}
+.btn {
+  width: 20%;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 50px;
+  background: transparent;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.btn:hover {
+  background: white;
+  color: black;
+}

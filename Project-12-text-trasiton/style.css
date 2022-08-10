@@ -1,59 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
-
-body {
+ @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Bowlby One SC, sans-serif;
+
+}
+body {
   width: 100%;
   height: 100vh;
-  box-sizing: border-box;
-  /* display: grid; */
-  /* place-items: center; */
-  overflow: hidden;
-  /* background: #f69294; */
-  background-image: url("bg.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(45deg, black, rgb(20, 220, 197), rgb(0, 0, 0));
 }
-
-.wrapper {
+.text {
   display: flex;
   align-items: center;
-  padding: 8pc 30pc;
-  border: 5px solid ;
-  border-right: 20px solid;
-  border-radius: 50px;
-  border-color:rgba(255, 255, 255, 0.475) ;
-
-  backdrop-filter: blur(5px);
 }
-.wrapper p {
-  font-size: 100px;
+.text p {
+  font-size: 200px;
   font-family: Bowlby One SC, sans-serif;
   transform: scale(0.9, 1) rotatey(-10deg) translatey(0px);
-  animation: jump 2.2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-  text-shadow: 3px 3px #e8332e, 6px 6px #fc9e05, 10px 10px #891696;
+  animation: scaling 3s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  text-shadow: 0 0 #e8332e, 0 0 #fc9e05, 0 0 #891696;
   transform-origin: 50% 100%;
   color: #fff;
   position: relative;
-  top: 10%;
   transform-style: preserve-3d;
   margin-right: 4px;
 }
-.wrapper p:nth-child(1) {
+.text p:nth-child(1) {
   animation-delay: 140ms;
 }
-.wrapper p:nth-child(2) {
+.text p:nth-child(2) {
   animation-delay: 280ms;
 }
-.wrapper p:nth-child(3) {
+.text p:nth-child(3) {
   animation-delay: 420ms;
 }
-.wrapper p:nth-child(4) {
+.text p:nth-child(4) {
   animation-delay: 560ms;
 }
-.wrapper p:nth-child(5) {
+.text p:nth-child(5) {
   animation-delay: 700ms;
+}
+.text p:nth-child(6) {
+  animation-delay: 840ms;
+}
+.text p:nth-child(7) {
+  animation-delay: 980ms;
 }
 
 @keyframes scaling {
@@ -74,6 +71,7 @@ body {
     text-shadow: 10px 0px #e8332e, 20px 0 #fc9e05, 30px 0 #891696;
   }
 }
+
 @keyframes jump {
   20% {
     transform: translatey(0) scale(0);
@@ -91,4 +89,4 @@ body {
     transform: translatey(-50px) scale(1);
     opacity: 1;
   }
-}
+}  
