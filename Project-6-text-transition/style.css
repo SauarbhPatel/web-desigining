@@ -21,6 +21,7 @@ nav {
   padding: 10px 5%;
   background: linear-gradient(to left, black, crimson);
   border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+  justify-content: space-between;
 }
 .title {
   color: white;
@@ -42,6 +43,8 @@ nav ul li a {
   color: white;
   transition: 0.5s;
 }
+
+
 nav ul li a:hover {
   color: crimson;
 }
@@ -193,4 +196,28 @@ h1:nth-child(3) span {
   height: 100%;
   width: 50%;
   transition-delay: 0s, 0.5s;
+}
+@media (max-width:1000px){
+  .title{
+    font-size: 2rem;
+  } 
+  nav ul li{
+    margin: 10px 10px;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+  .container{
+    transform: scale(0.7);
+    padding: 0 15%;
+  }
+}
+@media (max-width:600px){
+ nav ul{
+  display: none;
+ }
+ .container{
+  transform: scale(0.5);
+  padding: 0 0;
+}
 }
